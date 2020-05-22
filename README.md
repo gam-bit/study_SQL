@@ -13,6 +13,6 @@
 ### HackerRank Selected Problems
 
 | Problems | Solutions | Level | Concept |
-|----------|-----------|-------|------| --------|
+|----------|-----------|-------|--------|
 | [Top Earners](https://www.hackerrank.com/challenges/earnings-of-employees/problem) | [MySQL](./HackerRank/Top_Earners.sql) | Easy | Group by; order by; limit; subquery; where; having; |
 | [The Report](https://www.hackerrank.com/challenges/the-report/problem) | [MySQL](./HackerRank/The_Report.sql) | Medium | Select절에 조건문; join; between A and B; |
