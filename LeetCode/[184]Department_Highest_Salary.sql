@@ -32,6 +32,7 @@ Write a SQL query to find employees who have the highest salary in each of the d
 +------------+----------+--------+
 */
 
+-- 방법1)
 select d2.name as Department
      , e.name as employee
      , e.salary as salary
@@ -53,9 +54,24 @@ from employee as e
 2) where in (select max(column) ...)로 where절을 이용
 */
 
--- 방법2) where절 사용
+-- 방법2) 서브쿼리를 where절 사용
 select d.name as Department
      , e.name as employee
      , e.salary as salary
 from employee e inner join department d on e.departmentid = d.id
 where (e.departmentid, salary) in (select departmentid, max(salary) from employee group by departmentid)
+
+
+-- 방법3) [MS SQL]window function
+select ms.department
+     , ms.employee
+     , ms.salary
+from (
+    select d.name as department
+         , e.name as employee
+         , e.salary as salary
+         , max(e.salary) over (partition by d.name) as max_salary
+    from employee as e
+    join department as d on e.departmentid = d.id
+) ms
+where ms.salary = ms.max_salary
