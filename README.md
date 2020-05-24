@@ -19,8 +19,12 @@ window function의 경우, 버전이 낮은 MySQL에서는 작동하지 않기 �
 ---
 ### HackerRank Selected Problems
 
+- Weather Observation Station 문제들은 기본적인 정규표현식을 연습하기 좋다.
+
 | Problems | Solutions | Level | Concept | Mark |
 |----------|-----------|-------|--------|---|
 | [Top Earners](https://www.hackerrank.com/challenges/earnings-of-employees/problem) | [MySQL](./HackerRank/Top_Earners.sql) | Easy | Group by; order by; limit; subquery; where; having; | - |
 | [The Report](https://www.hackerrank.com/challenges/the-report/problem) | [MySQL](./HackerRank/The_Report.sql) | Medium | Select절에 조건문; join; between A and B; | - |
 | [Challenges](https://www.hackerrank.com/challenges/challenges/problem) | [MySQL](./HackerRank/Challenges.sql) | Medium | Subquery; group by; having; with statement; | ★ |
+| [Weather Observation Station6](https://www.hackerrank.com/challenges/weather-observation-station-6/problem) | [MySQL](./HackerRank/Weather_Observation_Station6.sql) | Easy | Regexp(정규표현식); aeiou로 시작하는 이름; | ★ |
+| [Weather Observation Station9](https://www.hackerrank.com/challenges/weather-observation-station-9/problem) | [MySQL](./HackerRank/Weather_Observation_Station9.sql) | Easy | Regexp(정규표현식); aeiou로 시작하지 않는 이름; | ★ |
