@@ -1,8 +1,5 @@
 ## 데이터 분석을 위한 SQL 
 
- 기본적으로 MySQL을 사용했습니다.
-
----
 
 ### LeetCode Selected Problems
 
