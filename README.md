@@ -6,15 +6,17 @@
 
 ### LeetCode Selected Problems
 
-window function의 경우, 버전이 낮은 MySQL에서는 작동하지 않기 때문에 MS SQL를 사용했습니다. MySQL에서 window function을 작성할 수 있는 경우는 구별할 필요가 없습니다.
+- Window function의 경우, 버전이 낮은 MySQL에서는 작동하지 않기 때문에 MS SQL를 사용했습니다. MySQL에서 window function을 작성할 수 있는 경우는 구별할 필요가 없습니다.
+- [177] Window function은 MS SQL에서 작동하고, limit는 MySQL에서만 작동한다.
 
 | # | Problems | Solutions | Acceptance | Level | Concept | Mark |
 |----|----------|-----------|-------|------| --------|---|
-| 672 | [Swap Salary](https://leetcode.com/problems/swap-salary/) | [MySQL](./LeetCode/[627]Swap_Salary.sql) | 74.2% | Easy | Update statement; 조건문| - |
+| 672 | [Swap Salary](https://leetcode.com/problems/swap-salary/) | [MySQL](./LeetCode/[627]Swap_Salary.sql) | 74.2% | Easy | Update statement; case when;| - |
 | 196 | [Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/) | [MySQL](./LeetCode/[196]Delete_Duplicate_Emails.sql) | 39.4% | Easy | Delete statement; subquery; join; | - |
 | 184 | [Department Highest Salary](https://leetcode.com/problems/department-highest-salary/) | [MySQL/MS SQL](./LeetCode/[184]Department_Highest_Salary.sql) | 35.2% | Medium | Subquery;  max all; / window function;| - |
 | 180 | [Consecutive Numbers](https://leetcode.com/problems/consecutive-numbers/) | [MySQL/MS SQL](./LeetCode/[180]Consecutive_Numbers.sql) | 38.6% | Medium | Self join; triple join; / window function; | - |
 | 185 | [Department Top Three Salaries](https://leetcode.com/problems/department-top-three-salaries/) | [MS SQL](./LeetCode/[185]Department_Top_Three_Salaries.sql) | 33.0% | Hard | Window function; join; dense_rank; | - |
+| 177 | [Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary/) | [MS SQL/MySQL](./LeetCode/[177]Nth_Hightest_Salary.sql) | 30.6% | Medium | User-defined function; dense_rank; case when; if function; limit; offset; | ★ |
 
 ---
 ### HackerRank Selected Problems
