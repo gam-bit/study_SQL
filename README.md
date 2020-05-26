@@ -14,6 +14,7 @@
 | 180 | [Consecutive Numbers](https://leetcode.com/problems/consecutive-numbers/) | [MySQL/MS SQL](./LeetCode/[180]Consecutive_Numbers.sql) | 38.6% | Medium | Self join; triple join; / window function; | - |
 | 185 | [Department Top Three Salaries](https://leetcode.com/problems/department-top-three-salaries/) | [MS SQL](./LeetCode/[185]Department_Top_Three_Salaries.sql) | 33.0% | Hard | Window function; join; dense_rank; | - |
 | 177 | [Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary/) | [MS SQL/MySQL](./LeetCode/[177]Nth_Hightest_Salary.sql) | 30.6% | Medium | User-defined function; dense_rank; case when; if function; limit; offset; | ★ |
+| 176 | [Second Highest Salary](https://leetcode.com/problems/second-highest-salary/) | [MySQL](./LeetCode/[176]]Second_Hightest_Salary.sql) | 30.9% | Easy | Case when; subquery; | ★ |
 
 ---
 ### HackerRank Selected Problems
