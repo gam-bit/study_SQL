@@ -3,6 +3,7 @@
 
 ### LeetCode Selected Problems
 
+
 - Window function의 경우, 버전이 낮은 MySQL에서는 작동하지 않기 때문에 MS SQL를 사용했습니다. MySQL에서 window function을 작성할 수 있는 경우는 구별할 필요가 없습니다.
 - [177] Window function은 MS SQL에서 작동하고, limit는 MySQL에서만 작동한다.
 
@@ -15,11 +16,14 @@
 | 185 | [Department Top Three Salaries](https://leetcode.com/problems/department-top-three-salaries/) | [MS SQL](./LeetCode/[185]Department_Top_Three_Salaries.sql) | 33.0% | Hard | Window function; join; dense_rank; | - |
 | 177 | [Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary/) | [MS SQL/MySQL](./LeetCode/[177]Nth_Hightest_Salary.sql) | 30.6% | Medium | User-defined function; dense_rank; case when; if function; limit; offset; | ★ |
 | 176 | [Second Highest Salary](https://leetcode.com/problems/second-highest-salary/) | [MySQL](./LeetCode/[176]]Second_Hightest_Salary.sql) | 30.9% | Easy | Case when; subquery; | ★ |
+| 596 | [Classes More Than 5 Students](https://leetcode.com/problems/classes-more-than-5-students/) | [MySQL](./LeetCode/[596]Classes_More_Than_5Students.sql) | 37.7% | Easy | Group by; having절에 distinct; | - |
 
 ---
 ### HackerRank Selected Problems
 
+
 - Weather Observation Station 문제들은 기본적인 정규표현식을 연습하기 좋다.
+
 
 | Problems | Solutions | Level | Concept | Mark |
 |----------|-----------|-------|--------|---|
