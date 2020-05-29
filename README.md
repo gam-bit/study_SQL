@@ -33,3 +33,4 @@
 | [Weather Observation Station6](https://www.hackerrank.com/challenges/weather-observation-station-6/problem) | [MySQL](./HackerRank/Weather_Observation_Station6.sql) | Easy | Regexp(정규표현식); aeiou로 시작하는 이름; | ★ |
 | [Weather Observation Station9](https://www.hackerrank.com/challenges/weather-observation-station-9/problem) | [MySQL](./HackerRank/Weather_Observation_Station9.sql) | Easy | Regexp(정규표현식); aeiou로 시작하지 않는 이름; | ★ |
 | [The PADS](https://www.hackerrank.com/challenges/the-pads/problem) | [MySQL](./HackerRank/The_PADS.sql) | Medium | String; concat; substring;| - |
+| [Occupations](https://www.hackerrank.com/challenges/occupations/problem) | [MS SQL/MySQL](./HackerRank/Occupations.sql) | Medium | Pivot table; order by; set; | ★★ |
