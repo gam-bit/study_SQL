@@ -18,6 +18,7 @@
 | 176 | [Second Highest Salary](https://leetcode.com/problems/second-highest-salary/) | [MySQL](./LeetCode/[176]]Second_Hightest_Salary.sql) | 30.9% | Easy | Case when; subquery; | ★ |
 | 596 | [Classes More Than 5 Students](https://leetcode.com/problems/classes-more-than-5-students/) | [MySQL](./LeetCode/[596]Classes_More_Than_5Students.sql) | 37.7% | Easy | Group by; having절에 distinct; | - |
 | 178 | [Rank Scores](https://leetcode.com/problems/rank-scores/) | [MySQL](./LeetCode/[178]Rank_Scores.sql) | 44.3% | Medium | Alias; dense_rank, rank, rownum의 차이; | - |
+| 262 | [Trips and Users](https://leetcode.com/problems/trips-and-users/) | [MySQL](./LeetCode/[262]Trips_and_Users.sql) | % | Hard | Join; Data Analysis; | ★★ |
 
 ---
 ### HackerRank Selected Problems
