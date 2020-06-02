@@ -37,3 +37,4 @@
 | [The PADS](https://www.hackerrank.com/challenges/the-pads/problem) | [MySQL](./HackerRank/The_PADS.sql) | Medium | String; concat; substring;| - |
 | [Occupations](https://www.hackerrank.com/challenges/occupations/problem) | [MS SQL/MySQL](./HackerRank/Occupations.sql) | Medium | Pivot table; order by; set; | ★★ |
 | [Binary Tree Nodes](https://www.hackerrank.com/challenges/binary-search-tree-1/problem) | [MySQL](./HackerRank/Binary_Tree_Nodes.sql) | Medium | Binary tree structure; subquery in select; join; case statement; | ★★ |
+| [Interviews](https://www.hackerrank.com/challenges/interviews/problem) | [MySQL](./HackerRank/Interviews.sql) | Hard | Advanced join; having; order by; not equal sign; | ★★ |
