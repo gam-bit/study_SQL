@@ -58,41 +58,45 @@ sorted by contest_id.
 Exclude the contest from the result if all four sums are 0.
 */
 
+
+--#############################################################################
+-- [MS SQL] with statement
 with base as (
-    select contests.contest_id
-         , contests.hacker_id
-         , contests.name
-         , challenges.challenge_id
-    from contests
-    left join colleges on contests.contest_id = colleges.contest_id
-    left join challenges on colleges.college_id = challenges.college_id)
+    select con.contest_id
+         , con.hacker_id
+         , con.name
+         , col.college_id
+         , chal.challenge_id
+    from contests con
+    left join colleges col on con.contest_id = col.contest_id
+    left join challenges chal on col.college_id = chal.college_id)
 
-
-
-select base.contest_id
-     , base.hacker_id
-     , base.name
-     , sum(total_submissions) as sum_total_submissions
-     , sum(total_accepted_submissions) as sum_total_accepted_submissions
-     , sum(total_views) as sum_total_views
-     , sum(total_unique_views) as sum_total_unique_views
-from base
+select b.contest_id
+     , b.hacker_id
+     , b.name
+     , sum(t2.total_submissions) as sum_total_submissions
+     , sum(t2.total_accepted_submissions) as sum_total_accepted_submissions
+     , sum(t1.total_views) as sum_total_views
+     , sum(t1.total_unique_views) as sum_total_unique_views
+from base b
 left join (
-            select challenge_id
-                 , sum(total_views) as total_views
-                 , sum(total_unique_views) as total_unique_views
-            from view_stats
-            group by challenge_id ) t1 on base.challenge_id = t1.challenge_id
+        select challenge_id
+             , sum(total_views) as total_views
+             , sum(total_unique_views) as total_unique_views
+        from view_stats
+        group by challenge_id
+    ) t1 on b.challenge_id = t1.challenge_id
 left join (
-            select challenge_id
-                 , sum(total_submissions) as total_submissions
-                 , sum(total_accepted_submissions) as total_accepted_submissions
-            from submission_stats
-            group by challenge_id) t2 on base.challenge_id = t2.challenge_id
-group by base.contest_id, base.hacker_id, base.name
-having sum_total_submissions <> 0 or sum_total_accepted_submissions <> 0
-       or sum_total_views <> 0 or sum_total_unique_views <> 0
-order by base.contest_id
+        select challenge_id
+             , sum(total_submissions) as total_submissions
+             , sum(total_accepted_submissions) as total_accepted_submissions
+        from submission_stats
+        group by challenge_id
+    ) t2 on b.challenge_id = t2.challenge_id
+group by b.contest_id, b.hacker_id, b.name
+having sum(total_submissions) <> 0 or sum(total_accepted_submissions) <> 0
+       or sum(total_views) <> 0 or sum(total_unique_views) <> 0
+order by b.contest_id
 
 -- ###################################################################################
 -- step1) challenge_id별로 view/submission을 sum한 table 생성

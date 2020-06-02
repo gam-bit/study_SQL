@@ -25,16 +25,16 @@
 
 
 - Weather Observation Station 문제들은 기본적인 정규표현식을 연습하기 좋다.
-
+- with statement는 MS SQL에서 지원된다.
 
 | Problems | Solutions | Level | Concept | Mark |
 |----------|-----------|-------|--------|---|
 | [Top Earners](https://www.hackerrank.com/challenges/earnings-of-employees/problem) | [MySQL](./HackerRank/Top_Earners.sql) | Easy | Group by; order by; limit; subquery; where; having; | - |
 | [The Report](https://www.hackerrank.com/challenges/the-report/problem) | [MySQL](./HackerRank/The_Report.sql) | Medium | Select절에 조건문; join; between A and B; | - |
-| [Challenges](https://www.hackerrank.com/challenges/challenges/problem) | [MySQL](./HackerRank/Challenges.sql) | Medium | Subquery; group by; having; with statement; | ★ |
+| [Challenges](https://www.hackerrank.com/challenges/challenges/problem) | [MySQL/MS SQL](./HackerRank/Challenges.sql) | Medium | Subquery; group by; having; with statement; | ★ |
 | [Weather Observation Station6](https://www.hackerrank.com/challenges/weather-observation-station-6/problem) | [MySQL](./HackerRank/Weather_Observation_Station6.sql) | Easy | Regexp(정규표현식); aeiou로 시작하는 이름; | ★ |
 | [Weather Observation Station9](https://www.hackerrank.com/challenges/weather-observation-station-9/problem) | [MySQL](./HackerRank/Weather_Observation_Station9.sql) | Easy | Regexp(정규표현식); aeiou로 시작하지 않는 이름; | ★ |
 | [The PADS](https://www.hackerrank.com/challenges/the-pads/problem) | [MySQL](./HackerRank/The_PADS.sql) | Medium | String; concat; substring;| - |
 | [Occupations](https://www.hackerrank.com/challenges/occupations/problem) | [MS SQL/MySQL](./HackerRank/Occupations.sql) | Medium | Pivot table; order by; set; | ★★ |
 | [Binary Tree Nodes](https://www.hackerrank.com/challenges/binary-search-tree-1/problem) | [MySQL](./HackerRank/Binary_Tree_Nodes.sql) | Medium | Binary tree structure; subquery in select; join; case statement; | ★★ |
-| [Interviews](https://www.hackerrank.com/challenges/interviews/problem) | [MySQL](./HackerRank/Interviews.sql) | Hard | Advanced join; having; order by; not equal sign; | ★★ |
+| [Interviews](https://www.hackerrank.com/challenges/interviews/problem) | [MySQL/MS SQL](./HackerRank/Interviews.sql) | Hard | Advanced join; having; order by; not equal sign; | ★★ |
