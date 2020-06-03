@@ -23,11 +23,12 @@ select N
 from bst b
 order by N
 
-
+-- select 절에 있는 subquery에 from을 쓰지만
+-- 쿼리의 from에 있는 테이블과 구분할 수 있다.
 
 
 /*
-select 절에서 사용되는 서브쿼리의 예) 연습 할 것 
+select 절에서 사용되는 서브쿼리의 예) 연습 할 것
 
 select player_name
      , height

@@ -19,6 +19,7 @@
 | 596 | [Classes More Than 5 Students](https://leetcode.com/problems/classes-more-than-5-students/) | [MySQL](./LeetCode/[596]Classes_More_Than_5Students.sql) | 37.7% | Easy | Group by; having절에 distinct; | - |
 | 178 | [Rank Scores](https://leetcode.com/problems/rank-scores/) | [MySQL](./LeetCode/[178]Rank_Scores.sql) | 44.3% | Medium | Alias; dense_rank, rank, rownum의 차이; | - |
 | 262 | [Trips and Users](https://leetcode.com/problems/trips-and-users/) | [MySQL](./LeetCode/[262]Trips_and_Users.sql) | 31.2% | Hard | Join; Data Analysis; | ★★ |
+| 626 | [Exchange Seats](https://leetcode.com/problems/exchange-seats/) | [MySQL](./LeetCode/[626]Exchange_Seats.sql) | 60.9% | Medium | Subquery in select; case statement; | ★ |
 
 ---
 ### HackerRank Selected Problems
@@ -37,4 +38,4 @@
 | [The PADS](https://www.hackerrank.com/challenges/the-pads/problem) | [MySQL](./HackerRank/The_PADS.sql) | Medium | String; concat; substring;| - |
 | [Occupations](https://www.hackerrank.com/challenges/occupations/problem) | [MS SQL/MySQL](./HackerRank/Occupations.sql) | Medium | Pivot table; order by; set; | ★★ |
 | [Binary Tree Nodes](https://www.hackerrank.com/challenges/binary-search-tree-1/problem) | [MySQL](./HackerRank/Binary_Tree_Nodes.sql) | Medium | Binary tree structure; subquery in select; join; case statement; | ★★ |
-| [Interviews](https://www.hackerrank.com/challenges/interviews/problem) | [MySQL/MS SQL](./HackerRank/Interviews.sql) | Hard | Advanced join; having; order by; not equal sign; | ★★ |
+| [Interviews](https://www.hackerrank.com/challenges/interviews/problem) | [MySQL/MS SQL](./HackerRank/Interviews.sql) | Hard | Advanced join; having; order by; not equal sign; with statmente; | ★★ |
