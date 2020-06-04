@@ -4,8 +4,8 @@
 ### LeetCode Selected Problems
 
 
-- Window function의 경우, 버전이 낮은 MySQL에서는 작동하지 않기 때문에 MS SQL를 사용했습니다. MySQL에서 window function을 작성할 수 있는 경우는 구별할 필요가 없습니다.
-- [177] Window function은 MS SQL에서 작동하고, limit는 MySQL에서만 작동한다.
+- Window function의 경우, 버전이 낮은 MySQL에서는 작동하지 않기 때문에 MS SQL를 사용했습니다.
+- [177] Window function은 MS SQL에서 작동하고, limit는 MySQL에서만 작동합니다.
 
 | # | Problems | Solutions | Acceptance | Level | Concept | Mark |
 |----|----------|-----------|-------|------| --------|---|
@@ -25,8 +25,8 @@
 ### HackerRank Selected Problems
 
 
-- Weather Observation Station 문제들은 기본적인 정규표현식을 연습하기 좋다.
-- with statement는 MS SQL에서 지원된다.
+- Weather Observation Station 문제들은 기본적인 정규표현식을 연습하기 좋습니다.
+- with statement는 MS SQL에서 지원됩니다.
 
 | Problems | Solutions | Level | Concept | Mark |
 |----------|-----------|-------|--------|---|
@@ -39,3 +39,4 @@
 | [Occupations](https://www.hackerrank.com/challenges/occupations/problem) | [MS SQL/MySQL](./HackerRank/Occupations.sql) | Medium | Pivot table; order by; set; | ★★ |
 | [Binary Tree Nodes](https://www.hackerrank.com/challenges/binary-search-tree-1/problem) | [MySQL](./HackerRank/Binary_Tree_Nodes.sql) | Medium | Binary tree structure; subquery in select; join; case statement; | ★★ |
 | [Interviews](https://www.hackerrank.com/challenges/interviews/problem) | [MySQL/MS SQL](./HackerRank/Interviews.sql) | Hard | Advanced join; having; order by; not equal sign; with statmente; | ★★ |
+| [New Companies](https://www.hackerrank.com/challenges/the-company/problem) | [MySQL](./HackerRank/New_Companies.sql) | Medium | Advanced select; count; group by; | - |
