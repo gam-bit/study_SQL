@@ -40,3 +40,4 @@
 | [Binary Tree Nodes](https://www.hackerrank.com/challenges/binary-search-tree-1/problem) | [MySQL](./HackerRank/Binary_Tree_Nodes.sql) | Medium | Binary tree structure; subquery in select; join; case statement; | ★★ |
 | [Interviews](https://www.hackerrank.com/challenges/interviews/problem) | [MySQL/MS SQL](./HackerRank/Interviews.sql) | Hard | Advanced join; having; order by; not equal sign; with statmente; | ★★ |
 | [New Companies](https://www.hackerrank.com/challenges/the-company/problem) | [MySQL](./HackerRank/New_Companies.sql) | Medium | Advanced select; count; group by; | - |
+| [Weather Observation Station18](https://www.hackerrank.com/challenges/weather-observation-station-18/problem) | [MySQL](./HackerRank/Weather_Observation_Station18.sql) | Medium | Aggregation; manhattan Distance; function; round; abs; max; min;| - |
