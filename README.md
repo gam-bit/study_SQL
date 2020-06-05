@@ -30,7 +30,7 @@
 
 | Problems | Solutions | Level | Concept | Mark |
 |----------|-----------|-------|--------|---|
-| [Top Earners](https://www.hackerrank.com/challenges/earnings-of-employees/problem) | [MySQL](./HackerRank/Top_Earners.sql) | Easy | Group by; order by; limit; subquery; where; having; | - |
+| [Top Earners](https://www.hackerrank.com/challenges/earnings-of-employees/problem) | [MySQL](./HackerRank/Top_Earners.sql) | Easy | Group by; order by; limit; subquery; where; having; select, group by 실행 순서; | - |
 | [The Report](https://www.hackerrank.com/challenges/the-report/problem) | [MySQL](./HackerRank/The_Report.sql) | Medium | Select절에 조건문; join; between A and B; | - |
 | [Challenges](https://www.hackerrank.com/challenges/challenges/problem) | [MySQL/MS SQL](./HackerRank/Challenges.sql) | Medium | Subquery; group by; having; with statement; | ★ |
 | [Weather Observation Station6](https://www.hackerrank.com/challenges/weather-observation-station-6/problem) | [MySQL](./HackerRank/Weather_Observation_Station6.sql) | Easy | Regexp(정규표현식); aeiou로 시작하는 이름; | ★ |
