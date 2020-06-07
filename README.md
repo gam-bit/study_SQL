@@ -20,6 +20,7 @@
 | 178 | [Rank Scores](https://leetcode.com/problems/rank-scores/) | [MySQL](./LeetCode/[178]Rank_Scores.sql) | 44.3% | Medium | Alias; dense_rank, rank, rownum의 차이; | - |
 | 262 | [Trips and Users](https://leetcode.com/problems/trips-and-users/) | [MySQL](./LeetCode/[262]Trips_and_Users.sql) | 31.2% | Hard | Join; Data Analysis; | ★★ |
 | 626 | [Exchange Seats](https://leetcode.com/problems/exchange-seats/) | [MySQL](./LeetCode/[626]Exchange_Seats.sql) | 60.9% | Medium | Subquery in select; case statement; | ★ |
+| 601 | [Human Traffic of Stadium](https://leetcode.com/problems/human-traffic-of-stadium/) | [MySQL](./LeetCode/[601]Human_Traffic_of_Stadium.sql) | 40.8% | Consecutive condition; self join; subquery; function; lead; lag; | | ★★ |
 
 ---
 ### HackerRank Selected Problems
