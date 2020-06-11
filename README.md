@@ -46,3 +46,4 @@
 | [Weather Observation Station20](https://www.hackerrank.com/challenges/weather-observation-station-20/problem) | [MySQL](./HackerRank/Weather_Observation_Station20.sql) | Medium | Aggregation; median; MySQL에서 dense_rank, row_number 처리 방법; set; | ★ |
 | [Top Competitors](https://www.hackerrank.com/challenges/full-score/problem) | [MySQL](./HackerRank/Top_Competitors.sql) | Medium | Join; difference inner join and left join; having; order by; | ★★ |
 | [Ollivander's Inventory](https://www.hackerrank.com/challenges/harry-potter-and-wands/problem) | [MySQL/MS SQL](./HackerRank/Ollivander's_Inventory.sql) | Medium | Join; window function; row_number; min; subquery; | ★★ |
+| [Contest Leaderboard](https://www.hackerrank.com/challenges/contest-leaderboard/problem) | [MySQL](./HackerRank/Contest_Leaderboard.sql) | Medium | Join; subquery in from; | - |
