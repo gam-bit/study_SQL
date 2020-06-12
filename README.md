@@ -47,3 +47,4 @@
 | [Top Competitors](https://www.hackerrank.com/challenges/full-score/problem) | [MySQL](./HackerRank/Top_Competitors.sql) | Medium | Join; difference inner join and left join; having; order by; | ★★ |
 | [Ollivander's Inventory](https://www.hackerrank.com/challenges/harry-potter-and-wands/problem) | [MySQL/MS SQL](./HackerRank/Ollivander's_Inventory.sql) | Medium | Join; window function; row_number; min; subquery; | ★★ |
 | [Contest Leaderboard](https://www.hackerrank.com/challenges/contest-leaderboard/problem) | [MySQL](./HackerRank/Contest_Leaderboard.sql) | Medium | Join; subquery in from; | - |
+| [SQL Project Planning](https://www.hackerrank.com/challenges/sql-projects/problem) | [MySQL](./HackerRank/SQL_Project_Planning.sql) | Medium | Advanced join; consecutive days; | ★★★ |
