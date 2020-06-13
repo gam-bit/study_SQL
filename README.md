@@ -48,3 +48,4 @@
 | [Ollivander's Inventory](https://www.hackerrank.com/challenges/harry-potter-and-wands/problem) | [MySQL/MS SQL](./HackerRank/Ollivander's_Inventory.sql) | Medium | Join; window function; row_number; min; subquery; | ★★ |
 | [Contest Leaderboard](https://www.hackerrank.com/challenges/contest-leaderboard/problem) | [MySQL](./HackerRank/Contest_Leaderboard.sql) | Medium | Join; subquery in from; | - |
 | [SQL Project Planning](https://www.hackerrank.com/challenges/sql-projects/problem) | [MySQL](./HackerRank/SQL_Project_Planning.sql) | Medium | Advanced join; consecutive days; | ★★★ |
+| [Placements](https://www.hackerrank.com/challenges/placements/problem) | [MySQL](./HackerRank/Placements.sql) | Medium | Advanced join; | - |
