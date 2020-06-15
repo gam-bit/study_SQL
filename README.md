@@ -50,3 +50,4 @@
 | [SQL Project Planning](https://www.hackerrank.com/challenges/sql-projects/problem) | [MySQL](./HackerRank/SQL_Project_Planning.sql) | Medium | Advanced join; consecutive days; | ★★★ |
 | [Placements](https://www.hackerrank.com/challenges/placements/problem) | [MySQL](./HackerRank/Placements.sql) | Medium | Advanced join; | - |
 | [Symmetri Pairs](https://www.hackerrank.com/challenges/symmetric-pairs/problem) | [MySQL](./HackerRank/Symmetri_Pairs.sql) | Medium | Advanced join; case statement; group by; having; | ★ |
+| [Print Prime Numbers](https://www.hackerrank.com/challenges/print-prime-numbers/problem) | [MySQL](./HackerRank/Print_Prime_Numbers.sql) | Medium | Alternative Queries; group_concat; cross join; information_schema.tables; | ★★★ |
