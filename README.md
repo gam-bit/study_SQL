@@ -7,8 +7,8 @@
 - [177|178] Window function의 경우, 버전이 낮은 MySQL에서는 작동하지 않기 때문에 MS SQL를 사용했습니다.
 - [177] Window function은 MS SQL에서 작동하고, limit는 MySQL에서만 작동합니다.
 
-| # | Problems | Solutions | Acceptance | Level | Concept | Mark |
-|----|----------|-----------|-------|------| --------|---|
+| # |  Problems  | Solutions | Acceptance | Level | Concept | Mark |
+|----|-------------|-----------|-------|------| --------|---|
 | 672 | [Swap Salary](https://leetcode.com/problems/swap-salary/) | [MySQL](./LeetCode/[627]Swap_Salary.sql) | 74.2% | Easy | Update statement; case when;| - |
 | 196 | [Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/) | [MySQL](./LeetCode/[196]Delete_Duplicate_Emails.sql) | 39.4% | Easy | Delete statement; subquery; join; | - |
 | 184 | [Department Highest Salary](https://leetcode.com/problems/department-highest-salary/) | [MySQL/MS SQL](./LeetCode/[184]Department_Highest_Salary.sql) | 35.2% | Medium | Subquery;  max all; / window function;| - |
@@ -51,3 +51,4 @@
 | [Placements](https://www.hackerrank.com/challenges/placements/problem) | [MySQL](./HackerRank/Placements.sql) | Medium | Advanced join; | - |
 | [Symmetri Pairs](https://www.hackerrank.com/challenges/symmetric-pairs/problem) | [MySQL](./HackerRank/Symmetri_Pairs.sql) | Medium | Advanced join; case statement; group by; having; | ★ |
 | [Print Prime Numbers](https://www.hackerrank.com/challenges/print-prime-numbers/problem) | [MySQL](./HackerRank/Print_Prime_Numbers.sql) | Medium | Alternative Queries; group_concat; cross join; information_schema.tables; | ★★★ |
+| [15 Days of Learning SQL 1](https://www.hackerrank.com/challenges/15-days-of-learning-sql/problem) | [MySQL/MS SQL](./HackerRank/15Days_of_Learning_SQL_1.sql) | Hard | ***해당 문제를 약간 변형한 문제, 매일매일 submission을 제출한 hacker_id 개수를 뽑는다는 기준을 제거*** Advanced join; 날짜별로 첫번째 데이터 추출하기; group by; subquery; / with statement; window function; row_number; order by; | ★★★ |
