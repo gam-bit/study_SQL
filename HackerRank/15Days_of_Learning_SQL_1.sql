@@ -36,6 +36,7 @@ sorted by the date.
 
 */
 --##############################################################################
+--[MySQL]
 -- step 1. 각 날짜별로 submission을 제출한 unique hackers 숫자가 있는 테이블 : t1
 --         >> submission_date, num_hackers
 select submission_date
@@ -76,7 +77,7 @@ where t2.num_submissions = t3.max_subs
 order by submissions_date, hacker_id
 
 
--- step4. 날짜별로 submissions이 같은 hackers가 존재하는 경우에는
+-- step5. 날짜별로 submissions이 같은 hackers가 존재하는 경우에는
 --        hacker_id가 작은 경우를 선택한 테이블 : tttt
 --        >> submission_date, num_hackers, min_hacker_id
 select submission_date
@@ -93,7 +94,7 @@ from (select t1.submission_date
       order by submissions_date, hacker_id) ttt
 group by submission_date, num_hackers
 
--- step5. tttt와 hackers를 join해서 tttt에 name을 붙임
+-- step6. tttt와 hackers를 join해서 tttt에 name을 붙임
 select tttt.submission_date
      , tttt.num_hackers
      , h.hacker_id
@@ -156,54 +157,7 @@ order by submission_date
 
 --#############################################################################
 --[MS SQL]
--- step 1. 각 날짜별로 submission을 제출한 unique hackers 숫자가 있는 테이블 : t1
---         >> submission_date, num_hackers
--- step 2. 각 날짜별, hacker별로 submission 제출 횟수가 있는 테이블 : t2
---         >> submission_date, num_submissions, hacker_id, name
-select s.submission_date
-     , count(distinct s.hacker_id) over (partition by s.submission_date) as num_hackers
-     , count(*) over (partition by s.submission_date, s.hacker_id) as num_submissions
-     , h.hacker_id
-     , h.name
-from submission s
-join hackers h on s.hacker_id = h.hacker_id
-
-
--- step3. t2에서 제출 횟수가 제일 많을 때의 데이터를 추출 : t3
-select submission_date
-     , max(num_submissions) max_subs
-from t2
-group by submission_date
-
-
-
--- step4. t1과 t2를 join해서 원하는 데이터 추출 : t
---        날짜별로 submissions이 같은 hackers가 존재하는 경우를 위해서
---        row_number 칼럼도 생성하기(order by hacker_id)
---        >> submission_date, num_hackers, hacker_id, order_id, name
-select t1.submission_date
-     , t1.num_hackers
-     , t2.hacker_id
-     , row_number() over (partition by t1.submission_date order by t2.hacker_id) order_id
-     , t2.name
-from t2
-join t1 on t1.submission_date = t2.submission_date
-join t3 on t2.submission_date = t3.submission_date
-where t2.num_submissions = t3.max_subs
-
-
-
--- step5. 날짜별로 submissions이 같은 hackers가 존재하는 경우에는
---        hacker_id가 작은 경우를 선택
-select submission_date
-     , num_hackers
-     , hacker_id
-     , name
-from table
-where order_id = 1
-
-
--- total solutions)
+-- solutions)
 with t2 as (
     select s.submission_date
          , count(*) as num_submissions
@@ -222,17 +176,13 @@ from (
     select t1.submission_date
          , t1.num_hackers
          , t2.hacker_id
-         , row_number() over (partition by t1.submission_date order by t2.hacker_id) order_id
+         , row_number() over (partition by t1.submission_date order by t2.num_submissions desc, t2.hacker_id) order_id
          , t2.name
      from t2
      join (select submission_date
                 , count(distinct hacker_id) as num_hackers
            from submissions
-           group by submission_date) t1 on t1.submission_date = t2.submission_date
-     join (select submission_date
-                , max(num_submissions) max_subs
-           from t2 group by submission_date) t3 on t2.submission_date = t3.submission_date
-     where t2.num_submissions = t3.max_subs) t
+           group by submission_date) t1 on t1.submission_date = t2.submission_date) t
 where order_id = 1
 
 

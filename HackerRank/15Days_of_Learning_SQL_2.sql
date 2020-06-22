@@ -237,7 +237,7 @@ SELECT Q2.submission_date, Q3.unique_count, Q2.hacker_id, H.name FROM
          whether or not the submissions of the hacker is the same number of the day till that day **/
         SELECT submission_date, COUNT(DISTINCT hacker_id) unique_count FROM
             (
-            SELECT DISTINCT(T0.hacker_id), T0.submission_date,
+            SELECT T0.hacker_id, T0.submission_date,
             COUNT(T0.submission_date) OVER(PARTITION BY T0.hacker_id ORDER BY T0.submission_date ASC) subdate_count
             FROM
                         /**이 부분 놓치기 쉬움**/
